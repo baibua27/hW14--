@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* add this line to vertically center the content */
+}
+
+.todo-app {
+  background: rgba(255, 248, 252, 0.7); /* เปลี่ยนสีพื้นหลังโปร่งใส */
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  border-radius: 8px; /* เพิ่มขอบมน */
+  padding: 16px; /* เพิ่มการเสริม */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+}
+.dashboard {
+  background-color: gainsboro;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 8px;
+  border-radius: 8px; /* add border-radius for rounded corners */
+}
+
+.form-add-todo,
+.todo-edit-form {
+  background-color: gold;
+  padding: 8px 16px;
+  display: flex;
+  gap: 8px; /* increase the gap for better spacing */
+  border-radius: 8px; /* add border-radius for rounded corners */
+}
+
+.form-add-todo > input,
+.todo-edit-form > [type=text] {
+  flex-grow: 8;
+  font-size: large;
+  padding: 8px; /* increase padding for better input field appearance */
+}
+
+.form-add-todo > button {
+  flex-grow: 2;
+  padding: 8px; /* increase padding for better button appearance */
+  background-color: green; /* change background color for better visibility */
+  border: none; /* remove border for a cleaner look */
+  cursor: pointer;
+  border-radius: 4px; /* add border-radius for rounded corners */
+}
+
+.todo-container {
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 8px; /* add border-radius for rounded corners */
+}
+
+.todo-item {
+  background-color: gainsboro;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* vertically center the content */
+  font-size: large;
+  border-radius: 8px; /* add border-radius for rounded corners */
+}
+
+.todo-item p {
+  width: 80%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.todo-item .btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.todo-item .btn-group a {
+  background-color: red;
+  border: 1px solid silver;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px; /* add border-radius for rounded corners */
+}
+
+.job-done {
+  text-decoration: line-through;
+  color: silver;
+}
+
+body {
+  background-image: url("https://i.pinimg.com/originals/b0/7c/0f/b07c0fc116d1868db07a8bbc2d79aab9.gif");
+
+}
+
